@@ -510,15 +510,18 @@ Trim() // Entfernt führende und abschließende Leerzeichen aus einem String
 Substring(int startIndex) // Methode wird an einem String ausgeführt; nimmt als Parameter einen Integer-Wert entgegen, der den nullbasierten Index des ersten Zeichens angibt, das in den Substring aufgenommen werden soll.
 
 Substring(int startIndex, int Length) // Siehe oben + nimmt zusätzlich als 2. Parameter die Länge der Unterzeichenkette entgegen, die zurückgegeben werden soll
-
-IndexOf(string value) // Gibt den null-basierten Index des ersten Vorkommens der angegebenen Zeichenkette zurück; wenn die Zeichenkette nicht gefunden wird, wird "-1" zurückgegeben  
-
-ToUpper(); // Wandelt alle Buchstaben in Großbuchstaben um
 ```
 
-Split();
 ```csharp
-// Wandelt eine Zeichenkette in eine Array aus Substrings auf mit Hilfe bestimmter Trennzeichen
+// IndexOf(string value); Gibt den null-basierten Index des ersten Vorkommens der angegebenen Zeichenkette zurück; wenn die Zeichenkette nicht gefunden wird, wird "-1" zurückgegeben  
+```
+
+```csharp
+// ToUpper(); ToLower(); Wandelt alle Buchstaben in Groß- bzw. Kleinbuchstaben um
+```
+
+```csharp
+// Split(); Wandelt mit Hilfe eines Array aus Trennezeichen eine Zeichenkette in ein Array aus Substrings um
 string appDate = "6/26/2024 13:45:00";
 char[] separators = new char[] {'/', ' ', ':'};
 string[] appDateSubstrings = appDate.Split(separators);
@@ -944,6 +947,12 @@ public static bool IsUnique (List<string> languages) {
 	return true;
 }
 ```
+
+### DateTime-Objekte
+Wie ich ein DateTime-Objekt erstelle 
+Wie ich aus einem String ein DateTime-Objekt erstelle (Task1)
+Wie ich auf Elemente eines DateTime zugreife
+Wie ich DateTime-Objekte vergleiche
 
 
 
