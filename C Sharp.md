@@ -515,6 +515,15 @@ IndexOf(string value) // Gibt den null-basierten Index des ersten Vorkommens der
 
 ToUpper(); // Wandelt alle Buchstaben in Großbuchstaben um
 ```
+
+Split();
+```csharp
+// Wandelt eine Zeichenkette in eine Array aus Substrings auf mit Hilfe bestimmter Trennzeichen
+string appDate = "6/26/2024 13:45:00";
+char[] separators = new char[] {'/', ' ', ':'};
+string[] appDateSubstrings = appDate.Split(separators);
+```
+
 ### String-Konkatenation mit "StringBuilder"
 
 ```csharp
